@@ -7,6 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 import styled from 'styled-components';
+import Nav from './components/Nav'
 
 // 100vh(view height) means always full fill screen
 const Wrapper = styled.div`
@@ -21,17 +22,6 @@ const Main = styled.div`
   flex-grow: 1; // this property can let element posses most space
 `
 
-const Nav = styled.div`
-  border: 1px solid blue;
-  >ul {
-    display: flex;
-    > li {
-      width: 33.3333%;
-      text-align: center;
-      padding: 16px;
-    }
-  }
-`
 function App() {
   return (
     <Router>
@@ -53,19 +43,7 @@ function App() {
             </Route>
           </Switch>
         </Main>
-        <Nav>
-          <ul>
-            <li>
-              <Link to="/money">money</Link>
-            </li>
-            <li>
-              <Link to="/detail">detail</Link>
-            </li>
-            <li>
-              <Link to="/report">report</Link>
-            </li>
-          </ul>
-        </Nav>
+        <Nav />
       </Wrapper>
     </Router>
   );
