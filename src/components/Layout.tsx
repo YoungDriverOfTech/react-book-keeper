@@ -19,7 +19,7 @@ const Layout = (props: any) => {
             <Wrapper>
                 <Main>
                     {/* this children property just like vue's slot */}
-                    <h2>{props.children}</h2>
+                    {props.children}
                 </Main>
                 <Nav/>
             </Wrapper>

@@ -22,6 +22,7 @@ box-shadow: 0 0 3px rgba(0,0,0,0.25);
         height: 24px;
       }
       &.selected {
+        font-weight: bold;
         font-size: 1.2em;
         color: #1296db;
         .icon{
