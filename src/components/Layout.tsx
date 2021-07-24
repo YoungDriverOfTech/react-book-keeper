@@ -3,7 +3,6 @@ import Nav from 'components/Nav'
 
 // 100vh(view height) means always full fill screen
 const Wrapper = styled.div`
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;

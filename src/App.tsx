@@ -1,10 +1,13 @@
-import Layout from 'components/Layout';
 import {
   HashRouter as Router,
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
+import Detail from 'views/Detail';
+import Money from 'views/Money';
+import NotFound from 'views/NotFound';
+import Report from 'views/Report';
 
 function App() {
   return (
@@ -26,35 +29,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
-
-
-function Money() {
-  return (
-    <Layout>Money</Layout>
-  );
-}
-
-function Detail() {
-  return (
-    <Layout>Detail</Layout>
-  );
-}
-
-function Report() {
-  return (
-    <Layout>Report</Layout>
-  );
-}
-
-function NotFound() {
-  return (
-    <div>
-      <h2>
-        Not Found
-      </h2>
-    </div>
-  )
 }
 
 export default App;
